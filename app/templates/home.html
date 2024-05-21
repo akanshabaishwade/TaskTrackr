@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+    <h1>Task Management System</h1>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task.title }} - {{ task.status }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
